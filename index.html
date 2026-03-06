@@ -563,6 +563,7 @@
       formData.append('file', selectedFile);
       if (window.auth && window.auth.currentUser) {
         formData.append('uid', window.auth.currentUser.uid);
+        formData.append('email', window.auth.currentUser.email);
       }
 
       try {
